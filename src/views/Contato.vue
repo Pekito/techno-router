@@ -3,8 +3,13 @@
     <div v-if="loading">
             <PageLoading/>
     </div>
+    <transition>
+
+    <div v-if="api">
       <h1>Contato</h1>
       {{api}}
+    </div>
+    </transition>
   </div>
 </template>
 

@@ -4,8 +4,12 @@
             <PageLoading/>
 
     </div>
-      <h1>Cursos</h1>
+    <transition>
+    <div v-if="api">
+      <h1>Contato</h1>
       {{api}}
+    </div>
+    </transition>
   </div>
 </template>
 
