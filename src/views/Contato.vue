@@ -5,8 +5,13 @@
     </div>
     <transition>
       <div v-if="api">
-        <h1>Contato</h1>
-        {{ api }}
+        <h1>{{api.titulo}}</h1>
+        <p>{{api.descricao}}</p>
+        <ul>
+          <li v-for="(value, key) in api.contato" :key="value.telefone">
+              {{key | capitalize}}: {{value}}
+          </li>
+        </ul>
       </div>
     </transition>
   </div>
