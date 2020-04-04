@@ -1,27 +1,27 @@
 <template>
   <div id="app">
-      <TheHeader/>
-      <div class="container">
+    <TheHeader />
+    <div class="container">
       <transition>
-      <router-view></router-view>
+        <router-view></router-view>
       </transition>
-      </div>
+    </div>
   </div>
 </template>
 
 <script>
-  import TheHeader from './components/TheHeader.vue'
-  export default {
-    components: {
-      TheHeader,
-    }
+import TheHeader from "./components/TheHeader.vue";
+export default {
+  components: {
+    TheHeader
   }
+};
 </script>
 <style>
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
   color: #234;
 }
 
@@ -33,11 +33,11 @@ body {
 
 .v-enter {
   opacity: 0;
-  transform: translate3d(-30px, 0,0);
+  transform: translate3d(-30px, 0, 0);
 }
 
 .v-enter-active {
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 img {
@@ -54,6 +54,4 @@ img {
     display: block;
   }
 }
-
-
 </style>
