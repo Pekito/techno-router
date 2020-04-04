@@ -3,8 +3,9 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Contato from '../views/Contato.vue'
 import Cursos from '../views/Cursos.vue'
+import Curso from '../views/Curso.vue'
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {
@@ -21,13 +22,22 @@ const routes = [
     path: '/cursos',
     name: 'cursos',
     component: Cursos,
+    children: [
+      {
+        path: ':curso',
+        name: 'curso',
+        component: Curso,
+        props: true,
+
+      }
+    ]
   }
-]
+];
 
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes
-})
+});
 
 export default router
