@@ -53,8 +53,5 @@ export default {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.atirador {
-  list-style: none;
-  font-size: 1rem;
-}
+
 </style>

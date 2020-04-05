@@ -18,6 +18,15 @@ export default {
 };
 </script>
 <style>
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #234;
+}
+a.router-link-exact-active {
+  color: #4b8;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -42,6 +51,10 @@ body {
 
 img {
   max-width: 100%;
+}
+ul {
+  list-style: none;
+  font-size: 1rem;
 }
 
 .conteudo {
