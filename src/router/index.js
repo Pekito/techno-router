@@ -22,15 +22,13 @@ const routes = [
     path: '/cursos',
     name: 'cursos',
     component: Cursos,
-    children: [
-      {
-        path: ':curso',
-        name: 'curso',
-        component: Curso,
-        props: true,
+  },
+  {
+    path: '/cursos/:curso',
+    name: 'curso',
+    component: Curso,
+    props: true,
 
-      }
-    ]
   }
 ];
 
